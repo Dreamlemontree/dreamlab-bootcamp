@@ -1,0 +1,26 @@
+[project]
+name = "dreamlab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mingi", email = "quite1134@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+dreamlab = "dreamlab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "robot-project",
+]
